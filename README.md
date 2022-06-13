@@ -1,2 +1,2 @@
 # Chatme
-Chap app using a .Net.Sockets
+Desktop chat app using a .Net.Sockets

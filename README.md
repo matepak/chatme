@@ -1,2 +1,2 @@
-# chatme_clientserver
-Simple chat app using .Net.Sockets
+# Hhatme
+Chap app using a .Net.Sockets

@@ -46,6 +46,9 @@
             this.ipMaskedTextBox.Name = "ipMaskedTextBox";
             this.ipMaskedTextBox.Size = new System.Drawing.Size(100, 20);
             this.ipMaskedTextBox.TabIndex = 0;
+            this.ipMaskedTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.ipMaskedTextBox_MaskInputRejected);
+            this.ipMaskedTextBox.Text = "127.0.0.1";
+            this.ipMaskedTextBox.ValidatingType = typeof(System.Net.IPAddress);
             // 
             // ipLabel
             // 
@@ -62,6 +65,8 @@
             this.portMaskedTextBox.Name = "portMaskedTextBox";
             this.portMaskedTextBox.Size = new System.Drawing.Size(44, 20);
             this.portMaskedTextBox.TabIndex = 2;
+            this.portMaskedTextBox.Text = "1100";
+            this.portMaskedTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.portMaskedTextBox_MaskInputRejected);
             // 
             // portLabel
             // 
@@ -142,7 +147,6 @@
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

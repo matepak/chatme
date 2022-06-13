@@ -38,5 +38,15 @@ namespace chatmee_clientserver
         {
             Close();
         }
+
+        private void ipMaskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void portMaskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
